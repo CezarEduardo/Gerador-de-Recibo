@@ -68,9 +68,9 @@ public class ReciboDao {
             stmt.executeUpdate(); // Executando o script do mysql para ser inserido no banco.
 
         } catch (SQLException ex) {
-
-            System.err.println("ERRO: 03 - Erro ao altera os dados da tabela Cobrador " + ex);
             JOptionPane.showMessageDialog(null, "(Erro 03) - Erro ao alterar os dados");
+            System.err.println("ERRO: 03 - Erro ao altera os dados da tabela Cobrador " + ex);
+            
 
         } finally {
 
@@ -93,9 +93,9 @@ public class ReciboDao {
             stmt.executeUpdate(); // Executando o script do mysql para ser inserido no banco.
 
         } catch (SQLException ex) {
-
-            System.err.println("ERRO: 06 - Erro ao editar os dados da tabela Cobrador" + ex);
             JOptionPane.showMessageDialog(null, "(Erro 06) - Erro ao editar os dados");
+            System.err.println("ERRO: 06 - Erro ao editar os dados da tabela Cobrador" + ex);
+            
 
         } finally {
 
